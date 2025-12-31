@@ -1,6 +1,63 @@
 {
   "posts": [
     {
+      "id": 5,
+      "title": "5 Decadent Chocolate Cake Recipes: From Easy to Extravagant!",
+      "slug": "5-decadent-chocolate-cake-recipes-from-easy-to-extravagant",
+      "excerpt": "Craving chocolate? Dive into our collection of irresistible chocolate cake recipes, from simple weeknight treats to show-stopping desserts!",
+      "category": "Desserts",
+      "image": "../images/posts/5-decadent-chocolate-cake-recipes-from-easy-to-extravagant.jpg",
+      "date": "2025-12-31",
+      "content": {
+        "title": "5 Decadent Chocolate Cake Recipes: From Easy to Extravagant!",
+        "excerpt": "Craving chocolate? Dive into our collection of irresistible chocolate cake recipes, from simple weeknight treats to show-stopping desserts!",
+        "category": "Desserts",
+        "paragraphs": [
+          "Chocolate cake. The words alone evoke images of rich, moist layers, decadent frosting, and pure, unadulterated bliss. Whether you're celebrating a special occasion or simply indulging in a sweet treat, a slice of chocolate cake can always brighten your day. But with so many variations out there, where do you even begin? Fear not, fellow chocolate lovers! We've curated a collection of five incredible chocolate cake recipes, ranging from incredibly easy to beautifully extravagant, guaranteed to satisfy any craving.",
+          "First up is our One-Bowl Chocolate Cake. This recipe is perfect for busy weeknights when you need a quick and delicious dessert without the fuss. It requires minimal ingredients and cleanup, making it a true lifesaver. Don't let the simplicity fool you, though – this cake is surprisingly moist and flavorful, thanks to the addition of buttermilk and a touch of coffee to enhance the chocolate notes.",
+          "Next, we have a Classic Chocolate Layer Cake with Chocolate Buttercream. This is the quintessential chocolate cake, ideal for birthdays or any celebration. Two tender layers of chocolate cake are sandwiched between a creamy, rich chocolate buttercream frosting. It's a timeless recipe that's sure to impress anyone.",
+          "For those who prefer a fudgier texture, our Flourless Chocolate Cake is a must-try. This gluten-free delight is intensely chocolatey and incredibly decadent. It’s perfect for a special occasion, or a romantic treat. The lack of flour results in a dense, almost brownie-like texture that melts in your mouth.",
+          "If you're looking for something a little more unique, try our Mexican Chocolate Cake. This cake gets a subtle kick from cinnamon and a touch of cayenne pepper, adding a delightful warmth that complements the rich chocolate flavor. The spice doesn't make it overly spicy, but rather enhances the other flavors for a truly unforgettable experience.",
+          "And finally, for the ultimate chocolate indulgence, we present the Chocolate Lava Cake. These individual molten cakes are surprisingly easy to make and offer an impressive presentation. The warm, gooey center is a chocolate lover's dream come true. Serve them with a scoop of vanilla ice cream or a dusting of powdered sugar for the perfect finish.",
+          "No matter which recipe you choose, remember to use high-quality chocolate for the best flavor. Experiment with different types of chocolate, such as dark, milk, or even white chocolate, to create your own unique variations. So, preheat your oven, gather your ingredients, and get ready to bake some seriously delicious chocolate cakes!"
+        ],
+        "ingredients": [
+          "All-purpose flour",
+          "Granulated sugar",
+          "Unsweetened cocoa powder",
+          "Baking soda",
+          "Baking powder",
+          "Salt",
+          "Eggs",
+          "Buttermilk",
+          "Vegetable oil",
+          "Vanilla extract",
+          "Hot coffee",
+          "Butter",
+          "Powdered sugar",
+          "Heavy cream",
+          "Cinnamon",
+          "Cayenne pepper"
+        ],
+        "steps": [
+          "Preheat oven to 350°F (175°C). Grease and flour a cake pan.",
+          "In a large bowl, whisk together flour, sugar, cocoa powder, baking soda, baking powder, and salt.",
+          "Add eggs, buttermilk, oil, and vanilla extract. Beat until well combined.",
+          "Stir in hot coffee. Pour batter into prepared pan.",
+          "Bake for 30-35 minutes, or until a wooden skewer inserted into the center comes out clean.",
+          "Let cool completely before frosting or serving."
+        ],
+        "tags": [
+          "chocolate cake",
+          "dessert recipes",
+          "baking",
+          "chocolate",
+          "cake recipes"
+        ],
+        "image": "https://image.pollinations.ai/prompt/5%20Choclate%20Cakes%20Recipes%20recipes%20blog%20post%20feature%20image%2C%20high%20quality%2C%20photorealistic%2C%20photorealistic%2C%204k%2C%20high%20detail%2C%20professional%20photography%2C%20cinematic%20lighting?nologo=true"
+      }
+    },
+    {
       "id": 4,
       "title": "Korean Chicken Pasta: Spicy, Savory, & Irresistibly Cheesy!",
       "slug": "korean-chicken-pasta-spicy-savory-irresistibly-cheesy",

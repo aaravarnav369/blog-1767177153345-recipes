@@ -1,58 +1,60 @@
-[
-  {
-    "id": 1,
-    "title": "Creamy Dreamy: The BEST Chicken Pasta Recipe You'll Ever Make!",
-    "slug": "creamy-dreamy-the-best-chicken-pasta-recipe-you-ll-ever-make",
-    "excerpt": "This creamy chicken pasta is pure comfort food! Easy to make, packed with flavor, and ready in under 30 minutes. The ultimate weeknight dinner!",
-    "category": "Pasta & Poultry",
-    "image": "https://via.placeholder.com/800x400",
-    "date": "2025-12-31",
-    "content": {
+{
+  "posts": [
+    {
+      "id": 1,
       "title": "Creamy Dreamy: The BEST Chicken Pasta Recipe You'll Ever Make!",
+      "slug": "creamy-dreamy-the-best-chicken-pasta-recipe-you-ll-ever-make",
       "excerpt": "This creamy chicken pasta is pure comfort food! Easy to make, packed with flavor, and ready in under 30 minutes. The ultimate weeknight dinner!",
       "category": "Pasta & Poultry",
-      "paragraphs": [
-        "Chicken pasta is a weeknight dinner staple for a reason: it's quick, satisfying, and incredibly versatile. But not all chicken pasta is created equal. This recipe elevates the classic dish with a creamy, flavorful sauce, perfectly cooked chicken, and just the right amount of seasoning. Forget bland and boring; this is chicken pasta perfection.",
-        "The secret to this amazing chicken pasta lies in the sauce. We're ditching heavy cream in favor of a lighter, yet equally luscious, combination of chicken broth, Parmesan cheese, and a touch of butter. This creates a rich and savory sauce that coats every strand of pasta and morsel of chicken without feeling overly heavy.",
-        "Choosing the right pasta is also key. While any pasta shape will technically work, we recommend using penne, rotini, or fusilli. These shapes have ridges and grooves that help to capture the sauce, ensuring that every bite is bursting with flavor. Feel free to experiment and find your personal favorite!",
-        "For the chicken, we prefer using boneless, skinless chicken breasts. They cook quickly and evenly, making them ideal for a weeknight meal. You can also use chicken thighs if you prefer a richer flavor. Just be sure to adjust the cooking time accordingly to ensure they are fully cooked.",
-        "To add even more flavor and nutrients, consider adding some vegetables to your chicken pasta. Spinach, broccoli, bell peppers, and mushrooms are all great options. Simply sauté them with the chicken or add them to the sauce during the last few minutes of cooking. A sprinkle of fresh herbs like parsley or basil at the end will also elevate the dish.",
-        "One of the best things about this chicken pasta recipe is how easily it can be customized. Want to add a little spice? Throw in a pinch of red pepper flakes. Craving something more decadent? Stir in a spoonful of mascarpone cheese. The possibilities are endless!",
-        "Don't be afraid to experiment with different cheeses too! Asiago, Romano, or even a little bit of goat cheese can add a unique and delicious twist to this classic dish. Serve with a side salad and some crusty bread for a complete and satisfying meal."
-      ],
-      "ingredients": [
-        "1 pound boneless, skinless chicken breasts, cut into bite-sized pieces",
-        "1 pound pasta (penne, rotini, or fusilli)",
-        "2 tablespoons olive oil",
-        "1 small onion, chopped",
-        "2 cloves garlic, minced",
-        "1 cup chicken broth",
-        "1/2 cup grated Parmesan cheese",
-        "2 tablespoons butter",
-        "1/4 teaspoon salt",
-        "1/4 teaspoon black pepper",
-        "Optional: 1 cup chopped vegetables (spinach, broccoli, bell peppers, mushrooms)",
-        "Optional: Fresh parsley or basil, chopped, for garnish"
-      ],
-      "steps": [
-        "Cook pasta according to package directions. Drain and set aside.",
-        "While pasta is cooking, heat olive oil in a large skillet over medium heat. Add chicken and cook until browned and cooked through.",
-        "Add onion and garlic to the skillet and cook until softened, about 3-5 minutes.",
-        "Pour in chicken broth and bring to a simmer. Reduce heat and simmer for 5 minutes, allowing the sauce to slightly thicken.",
-        "Stir in Parmesan cheese and butter until melted and smooth.",
-        "Season with salt and pepper to taste. If using, add chopped vegetables and cook until tender-crisp.",
-        "Add cooked pasta to the skillet and toss to coat with the sauce. Garnish with fresh parsley or basil, if desired. Serve immediately."
-      ],
-      "tags": [
-        "chicken pasta",
-        "pasta recipe",
-        "creamy pasta",
-        "easy dinner",
-        "weeknight meal",
-        "chicken recipe",
-        "comfort food"
-      ],
-      "image": "https://image.pollinations.ai/prompt/Best%20Chicken%20Pasta%20recipes%20blog%20post%20feature%20image%2C%20high%20quality%2C%20photorealistic"
+      "image": "https://via.placeholder.com/800x400",
+      "date": "2025-12-31",
+      "content": {
+        "title": "Creamy Dreamy: The BEST Chicken Pasta Recipe You'll Ever Make!",
+        "excerpt": "This creamy chicken pasta is pure comfort food! Easy to make, packed with flavor, and ready in under 30 minutes. The ultimate weeknight dinner!",
+        "category": "Pasta & Poultry",
+        "paragraphs": [
+          "Chicken pasta is a weeknight dinner staple for a reason: it's quick, satisfying, and incredibly versatile. But not all chicken pasta is created equal. This recipe elevates the classic dish with a creamy, flavorful sauce, perfectly cooked chicken, and just the right amount of seasoning. Forget bland and boring; this is chicken pasta perfection.",
+          "The secret to this amazing chicken pasta lies in the sauce. We're ditching heavy cream in favor of a lighter, yet equally luscious, combination of chicken broth, Parmesan cheese, and a touch of butter. This creates a rich and savory sauce that coats every strand of pasta and morsel of chicken without feeling overly heavy.",
+          "Choosing the right pasta is also key. While any pasta shape will technically work, we recommend using penne, rotini, or fusilli. These shapes have ridges and grooves that help to capture the sauce, ensuring that every bite is bursting with flavor. Feel free to experiment and find your personal favorite!",
+          "For the chicken, we prefer using boneless, skinless chicken breasts. They cook quickly and evenly, making them ideal for a weeknight meal. You can also use chicken thighs if you prefer a richer flavor. Just be sure to adjust the cooking time accordingly to ensure they are fully cooked.",
+          "To add even more flavor and nutrients, consider adding some vegetables to your chicken pasta. Spinach, broccoli, bell peppers, and mushrooms are all great options. Simply sauté them with the chicken or add them to the sauce during the last few minutes of cooking. A sprinkle of fresh herbs like parsley or basil at the end will also elevate the dish.",
+          "One of the best things about this chicken pasta recipe is how easily it can be customized. Want to add a little spice? Throw in a pinch of red pepper flakes. Craving something more decadent? Stir in a spoonful of mascarpone cheese. The possibilities are endless!",
+          "Don't be afraid to experiment with different cheeses too! Asiago, Romano, or even a little bit of goat cheese can add a unique and delicious twist to this classic dish. Serve with a side salad and some crusty bread for a complete and satisfying meal."
+        ],
+        "ingredients": [
+          "1 pound boneless, skinless chicken breasts, cut into bite-sized pieces",
+          "1 pound pasta (penne, rotini, or fusilli)",
+          "2 tablespoons olive oil",
+          "1 small onion, chopped",
+          "2 cloves garlic, minced",
+          "1 cup chicken broth",
+          "1/2 cup grated Parmesan cheese",
+          "2 tablespoons butter",
+          "1/4 teaspoon salt",
+          "1/4 teaspoon black pepper",
+          "Optional: 1 cup chopped vegetables (spinach, broccoli, bell peppers, mushrooms)",
+          "Optional: Fresh parsley or basil, chopped, for garnish"
+        ],
+        "steps": [
+          "Cook pasta according to package directions. Drain and set aside.",
+          "While pasta is cooking, heat olive oil in a large skillet over medium heat. Add chicken and cook until browned and cooked through.",
+          "Add onion and garlic to the skillet and cook until softened, about 3-5 minutes.",
+          "Pour in chicken broth and bring to a simmer. Reduce heat and simmer for 5 minutes, allowing the sauce to slightly thicken.",
+          "Stir in Parmesan cheese and butter until melted and smooth.",
+          "Season with salt and pepper to taste. If using, add chopped vegetables and cook until tender-crisp.",
+          "Add cooked pasta to the skillet and toss to coat with the sauce. Garnish with fresh parsley or basil, if desired. Serve immediately."
+        ],
+        "tags": [
+          "chicken pasta",
+          "pasta recipe",
+          "creamy pasta",
+          "easy dinner",
+          "weeknight meal",
+          "chicken recipe",
+          "comfort food"
+        ],
+        "image": "https://image.pollinations.ai/prompt/Best%20Chicken%20Pasta%20recipes%20blog%20post%20feature%20image%2C%20high%20quality%2C%20photorealistic"
+      }
     }
-  }
-]
+  ]
+}

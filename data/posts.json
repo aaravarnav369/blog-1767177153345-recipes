@@ -1,6 +1,60 @@
 {
   "posts": [
     {
+      "id": 2,
+      "title": "5 Irresistible Chicken Pasta Recipes: Weeknight Dinners Done Right!",
+      "slug": "5-irresistible-chicken-pasta-recipes-weeknight-dinners-done-right",
+      "excerpt": "Craving comfort? Discover 5 delicious and easy chicken pasta recipes that will satisfy your taste buds and simplify your weeknight dinners!",
+      "category": "Pasta Recipes",
+      "image": "https://via.placeholder.com/800x400",
+      "date": "2025-12-31",
+      "content": {
+        "title": "5 Irresistible Chicken Pasta Recipes: Weeknight Dinners Done Right!",
+        "excerpt": "Craving comfort? Discover 5 delicious and easy chicken pasta recipes that will satisfy your taste buds and simplify your weeknight dinners!",
+        "category": "Pasta Recipes",
+        "paragraphs": [
+          "Chicken pasta is a weeknight staple for a reason. It's quick, versatile, and utterly delicious. From creamy sauces to vibrant veggies, the possibilities are endless. But with so many options, choosing the perfect chicken pasta recipe can be overwhelming. That's why we've curated a list of our top 5 favorite chicken pasta dishes, each offering a unique flavor profile and guaranteed to become a family favorite.",
+          "First up, we have the classic Creamy Pesto Chicken Pasta. This dish is a symphony of flavors, combining the richness of pesto with the comforting creaminess of a cheesy sauce. Tender chicken pieces are coated in this delectable mixture and tossed with your favorite pasta shape. Add a sprinkle of Parmesan cheese and a garnish of fresh basil for a restaurant-worthy meal in minutes.",
+          "Next, let's explore the Lemon Garlic Chicken Pasta. This recipe is all about bright and zesty flavors. The lemon juice and garlic create a tangy and aromatic sauce that perfectly complements the grilled chicken. A touch of red pepper flakes adds a subtle kick, while fresh parsley provides a vibrant burst of freshness. This dish is light, refreshing, and perfect for warmer evenings.",
+          "For a comforting and hearty option, try our Tuscan Chicken Pasta. This recipe features sun-dried tomatoes, spinach, and a creamy garlic sauce. The sun-dried tomatoes add a chewy texture and intense flavor, while the spinach provides a healthy dose of greens. This chicken pasta dish is packed with flavor and nutrients, making it a complete and satisfying meal.",
+          "If you're looking for something a bit more adventurous, consider our Spicy Cajun Chicken Pasta. This recipe is a flavor explosion, combining Cajun spices with a creamy sauce and tender chicken. Bell peppers and onions add a touch of sweetness and texture, while a generous sprinkle of Cajun seasoning provides the perfect amount of heat. This chicken pasta is guaranteed to awaken your taste buds.",
+          "Finally, for a quick and easy option, we have the One-Pot Chicken Alfredo Pasta. This recipe is perfect for busy weeknights, as it requires minimal cleanup. Simply combine all the ingredients in one pot and cook until the pasta is tender and the sauce is creamy. This chicken pasta is a comforting and satisfying meal that comes together in a flash. Feel free to add broccoli or peas for added nutrients.",
+          "No matter which chicken pasta recipe you choose, you're sure to create a delicious and memorable meal. Experiment with different pasta shapes, vegetables, and spices to customize each recipe to your liking. With these 5 irresistible chicken pasta recipes, you'll never have to wonder what to make for dinner again!"
+        ],
+        "ingredients": [
+          "Pasta (any shape)",
+          "Chicken breast, cooked and diced",
+          "Olive oil",
+          "Garlic, minced",
+          "Onion, chopped",
+          "Heavy cream",
+          "Chicken broth",
+          "Parmesan cheese, grated",
+          "Salt and pepper to taste",
+          "Optional: vegetables of your choice (broccoli, spinach, mushrooms, etc.)"
+        ],
+        "steps": [
+          "Cook pasta according to package directions.",
+          "While pasta is cooking, heat olive oil in a large skillet over medium heat.",
+          "Add garlic and onion to the skillet and cook until softened.",
+          "Pour in heavy cream and chicken broth and bring to a simmer.",
+          "Stir in Parmesan cheese until melted and smooth.",
+          "Add cooked chicken and vegetables (if using) to the sauce.",
+          "Season with salt and pepper to taste.",
+          "Drain pasta and add it to the skillet with the sauce.",
+          "Toss to coat and serve immediately."
+        ],
+        "tags": [
+          "chicken pasta",
+          "pasta recipes",
+          "weeknight dinners",
+          "easy recipes",
+          "comfort food"
+        ],
+        "image": "https://image.pollinations.ai/prompt/5%20Best%20Chicken%20Pasta%20Recipes%20recipes%20blog%20post%20feature%20image%2C%20high%20quality%2C%20photorealistic%2C%20photorealistic%2C%204k%2C%20high%20detail%2C%20professional%20photography%2C%20cinematic%20lighting?nologo=true"
+      }
+    },
+    {
       "id": 1,
       "title": "Creamy Dreamy: The BEST Chicken Pasta Recipe You'll Ever Make!",
       "slug": "creamy-dreamy-the-best-chicken-pasta-recipe-you-ll-ever-make",

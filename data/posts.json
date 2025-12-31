@@ -1,6 +1,78 @@
 {
   "posts": [
     {
+      "id": 4,
+      "title": "Korean Chicken Pasta: Spicy, Savory, & Irresistibly Cheesy!",
+      "slug": "korean-chicken-pasta-spicy-savory-irresistibly-cheesy",
+      "excerpt": "Craving comfort food with a kick? This Korean Chicken Pasta is the ultimate fusion dish! Spicy gochujang meets creamy cheese and tender chicken.",
+      "category": "Pasta & Noodles",
+      "image": "../images/posts/korean-chicken-pasta-spicy-savory-irresistibly-cheesy.jpg",
+      "date": "2025-12-31",
+      "content": {
+        "title": "Korean Chicken Pasta: Spicy, Savory, & Irresistibly Cheesy!",
+        "excerpt": "Craving comfort food with a kick? This Korean Chicken Pasta is the ultimate fusion dish! Spicy gochujang meets creamy cheese and tender chicken.",
+        "category": "Pasta & Noodles",
+        "paragraphs": [
+          "Forget boring weeknight dinners! This Korean Chicken Pasta recipe is a guaranteed crowd-pleaser, combining the best of both worlds. We're talking perfectly cooked pasta tossed in a rich, flavorful sauce featuring the iconic flavors of Korean cuisine, all topped with juicy chicken. It's a comforting, yet exciting dish that's surprisingly easy to make.",
+          "The star of this recipe is undoubtedly the gochujang, a fermented Korean chili paste that brings a unique depth and subtle heat to the sauce. It's balanced by soy sauce, garlic, ginger, and a touch of honey for sweetness, creating a symphony of savory, spicy, and umami flavors. Don't be intimidated by gochujang; it's readily available in most Asian grocery stores and even some mainstream supermarkets. Start with a smaller amount if you're sensitive to spice and adjust to your preference.",
+          "We're using boneless, skinless chicken thighs for this recipe because they stay incredibly moist and tender, even when cooked at higher temperatures. Cut them into bite-sized pieces for even cooking and maximum sauce coverage. You can substitute chicken breast if you prefer, but be careful not to overcook it. A quick marinade with some of the sauce ingredients helps to infuse the chicken with flavor before it even hits the pan.",
+          "Feel free to experiment with different types of pasta. Spaghetti, fettuccine, or even penne work well in this recipe. Just be sure to cook the pasta al dente, as it will continue to cook slightly in the sauce. For an extra layer of richness, we're adding a generous amount of mozzarella cheese at the end. It melts beautifully into the sauce, creating a creamy, cheesy coating that's simply irresistible.",
+          "This Korean Chicken Pasta is delicious served as a main course, and it also makes a great dish to bring to potlucks or gatherings. Garnish with some chopped green onions and sesame seeds for a pop of color and added flavor. You can also add some kimchi for an extra layer of tangy funk. Prepare to be amazed by the explosion of flavors in every bite!"
+        ],
+        "ingredients": [
+          "1 pound pasta (spaghetti, fettuccine, or penne)",
+          "1.5 pounds boneless, skinless chicken thighs, cut into bite-sized pieces",
+          "2 tablespoons olive oil",
+          "2 cloves garlic, minced",
+          "1 inch ginger, grated",
+          "2 tablespoons gochujang (Korean chili paste)",
+          "2 tablespoons soy sauce",
+          "1 tablespoon honey",
+          "1 tablespoon sesame oil",
+          "1/2 cup chicken broth",
+          "1 cup shredded mozzarella cheese",
+          "2 green onions, chopped",
+          "1 tablespoon sesame seeds",
+          "Salt and pepper to taste"
+        ],
+        "steps": [
+          "Cook pasta according to package directions until al dente. Drain and set aside.",
+          "In a bowl, combine chicken with 1 tablespoon gochujang, 1 tablespoon soy sauce, and 1 teaspoon sesame oil. Marinate for at least 15 minutes.",
+          "Heat olive oil in a large skillet or wok over medium-high heat. Add chicken and cook until browned and cooked through, about 5-7 minutes.",
+          "Add garlic and ginger to the skillet and cook for 1 minute until fragrant.",
+          "Stir in remaining gochujang, soy sauce, honey, sesame oil, and chicken broth. Bring to a simmer and cook for 2-3 minutes, until slightly thickened.",
+          "Add cooked pasta to the skillet and toss to coat in the sauce.",
+          "Stir in mozzarella cheese until melted and creamy.",
+          "Garnish with green onions and sesame seeds. Serve immediately."
+        ],
+        "tags": [
+          "Korean",
+          "Chicken",
+          "Pasta",
+          "Gochujang",
+          "Spicy",
+          "Comfort Food",
+          "Fusion"
+        ],
+        "image": "https://image.pollinations.ai/prompt/Korean%20Chicken%20Pasta%20recipes%20blog%20post%20feature%20image%2C%20high%20quality%2C%20photorealistic%2C%20photorealistic%2C%204k%2C%20high%20detail%2C%20professional%20photography%2C%20cinematic%20lighting?nologo=true"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Test SSG Post 1767185022971",
+      "slug": "test-ssg-post-1767185022971",
+      "excerpt": "This is a test post to verify Static Site Generation.",
+      "category": "Testing",
+      "image": "https://via.placeholder.com/800x400?text=Image+Upload+Error",
+      "date": "2025-12-31",
+      "content": {
+        "paragraphs": [
+          "This is the first paragraph of the static test.",
+          "This is the second, ensuring HTML injection works."
+        ]
+      }
+    },
+    {
       "id": 2,
       "title": "5 Irresistible Chicken Pasta Recipes: Weeknight Dinners Done Right!",
       "slug": "5-irresistible-chicken-pasta-recipes-weeknight-dinners-done-right",

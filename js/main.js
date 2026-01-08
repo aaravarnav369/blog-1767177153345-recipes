@@ -23,22 +23,21 @@ let currentPost = null;
 // ============================================
 document.addEventListener('DOMContentLoaded', () => {
     initializeTheme();
-    
+
     // Determine which page we're on
-    const currentPage = window.location.pathname;
-    
-    if (currentPage.includes('post.html')) {
+    // Determine which page we're on based on elements present
+    if (document.getElementById('postContent')) {
         loadSinglePost();
-    } else {
+    } else if (document.getElementById('postsGrid')) {
         loadAllPosts();
     }
-    
+
     // Set current year in footer
     const yearElement = document.getElementById('currentYear');
     if (yearElement) {
         yearElement.textContent = new Date().getFullYear();
     }
-    
+
     // Mobile menu toggle
     setupMobileMenu();
 });
@@ -56,7 +55,7 @@ function initializeTheme() {
 function setupMobileMenu() {
     const toggle = document.querySelector('.mobile-menu-toggle');
     const nav = document.querySelector('.main-nav');
-    
+
     if (toggle && nav) {
         toggle.addEventListener('click', () => {
             nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
@@ -69,7 +68,7 @@ function setupMobileMenu() {
 // ============================================
 async function loadPostsData() {
     try {
-        const response = await fetch(CONFIG.dataPath);
+        const response = await fetch(`${CONFIG.dataPath}?t=${Date.now()}`);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -88,11 +87,11 @@ async function loadPostsData() {
 // ============================================
 async function loadAllPosts() {
     const posts = await loadPostsData();
-    
+
     if (posts.length === 0) {
         return;
     }
-    
+
     renderPostsGrid(posts);
     renderSidebar(posts);
 }
@@ -100,9 +99,9 @@ async function loadAllPosts() {
 function renderPostsGrid(posts) {
     const grid = document.getElementById('postsGrid');
     if (!grid) return;
-    
+
     grid.innerHTML = '';
-    
+
     posts.forEach(post => {
         const card = createPostCard(post);
         grid.appendChild(card);
@@ -112,16 +111,16 @@ function renderPostsGrid(posts) {
 function createPostCard(post) {
     const card = document.createElement('article');
     card.className = 'post-card';
-    
-    const imageHtml = post.image 
+
+    const imageHtml = post.image
         ? `<div class="post-card-image">
                <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.title)}" loading="lazy">
            </div>`
         : '';
-    
+
     const excerpt = truncateText(post.excerpt, CONFIG.excerptLength);
-    const postUrl = `post.html?slug=${encodeURIComponent(post.slug)}`;
-    
+    const postUrl = `posts/${encodeURIComponent(post.slug)}.html`;
+
     card.innerHTML = `
         ${imageHtml}
         <div class="post-card-content">
@@ -136,7 +135,7 @@ function createPostCard(post) {
             <a href="${postUrl}" class="read-more">Read More</a>
         </div>
     `;
-    
+
     return card;
 }
 
@@ -144,24 +143,44 @@ function createPostCard(post) {
 // SINGLE POST PAGE
 // ============================================
 async function loadSinglePost() {
+    // SSG CHECK: If the page already has content (static generation), don't fetch/render.
+    // However, we still might want to load sidebar data.
+    if (document.querySelector('.post-body') || window.preloadedPost) {
+        console.log('SSG/Static content detected. Skipping dynamic render.');
+        // Still load posts for the sidebar
+        const posts = await loadPostsData();
+        renderSidebar(posts);
+        return;
+    }
+
     const urlParams = new URLSearchParams(window.location.search);
     const slug = urlParams.get('slug');
-    
+
+    console.log('Loading single post for slug:', slug);
+
     if (!slug) {
-        showError('Post not found');
+        showError('Post not found (No slug provided)');
         return;
     }
-    
+
     const posts = await loadPostsData();
+    console.log('Loaded posts:', posts.length);
+
     const post = posts.find(p => p.slug === slug);
-    
+    console.log('Found post:', post ? post.title : 'None');
+
     if (!post) {
-        showError('Post not found');
+        showError('Post not found (Slug mismatch)');
         return;
     }
-    
+
     currentPost = post;
-    renderSinglePost(post);
+    try {
+        renderSinglePost(post);
+    } catch (e) {
+        console.error('Render error:', e);
+        showError('Error rendering post: ' + e.message);
+    }
     renderSidebar(posts);
     updateMetaTags(post);
 }
@@ -169,9 +188,9 @@ async function loadSinglePost() {
 function renderSinglePost(post) {
     const container = document.getElementById('postContent');
     if (!container) return;
-    
+
     const article = document.createElement('div');
-    
+
     // Header
     const headerHtml = `
         <header class="post-header">
@@ -182,22 +201,22 @@ function renderSinglePost(post) {
             <h1 class="post-title">${escapeHtml(post.title)}</h1>
         </header>
     `;
-    
+
     // Featured Image
-    const imageHtml = post.image 
+    const imageHtml = post.image
         ? `<div class="post-featured-image">
                <img src="${escapeHtml(post.image)}" alt="${escapeHtml(post.title)}">
            </div>`
         : '';
-    
+
     // Content
     let contentHtml = '<div class="post-body">';
-    
+
     // Paragraphs
     if (post.content.paragraphs && post.content.paragraphs.length > 0) {
         post.content.paragraphs.forEach((para, index) => {
             contentHtml += `<p>${escapeHtml(para)}</p>`;
-            
+
             // Insert mid-content ad after 3rd paragraph
             if (index === 2) {
                 contentHtml += `
@@ -210,7 +229,7 @@ function renderSinglePost(post) {
             }
         });
     }
-    
+
     // Ingredients (for recipe posts)
     if (post.content.ingredients && post.content.ingredients.length > 0) {
         contentHtml += '<h2>Ingredients</h2>';
@@ -220,7 +239,7 @@ function renderSinglePost(post) {
         });
         contentHtml += '</ul>';
     }
-    
+
     // Steps (for recipe posts or how-to guides)
     if (post.content.steps && post.content.steps.length > 0) {
         contentHtml += '<h2>Instructions</h2>';
@@ -230,7 +249,7 @@ function renderSinglePost(post) {
         });
         contentHtml += '</ol>';
     }
-    
+
     // End-content ad
     contentHtml += `
         <div class="ad-end-content">
@@ -239,9 +258,9 @@ function renderSinglePost(post) {
             </div>
         </div>
     `;
-    
+
     contentHtml += '</div>';
-    
+
     // Combine all parts
     article.innerHTML = headerHtml + imageHtml + contentHtml;
     container.innerHTML = '';
@@ -259,10 +278,10 @@ function renderSidebar(posts) {
 function renderCategories(posts) {
     const container = document.getElementById('categoryList');
     if (!container) return;
-    
+
     // Get unique categories
     const categories = [...new Set(posts.map(p => p.category))];
-    
+
     container.innerHTML = '';
     categories.forEach(category => {
         const count = posts.filter(p => p.category === category).length;
@@ -275,16 +294,16 @@ function renderCategories(posts) {
 function renderRecentPosts(posts) {
     const container = document.getElementById('recentPosts');
     if (!container) return;
-    
+
     // Sort by date (newest first) and take top 5
     const recentPosts = [...posts]
         .sort((a, b) => new Date(b.date) - new Date(a.date))
         .slice(0, 5);
-    
+
     container.innerHTML = '';
     recentPosts.forEach(post => {
         const li = document.createElement('li');
-        const postUrl = `post.html?slug=${encodeURIComponent(post.slug)}`;
+        const postUrl = `posts/${encodeURIComponent(post.slug)}.html`;
         li.innerHTML = `<a href="${postUrl}">${escapeHtml(post.title)}</a>`;
         container.appendChild(li);
     });
@@ -296,24 +315,24 @@ function renderRecentPosts(posts) {
 function updateMetaTags(post) {
     // Update title
     document.title = `${post.title} - Universal Blog Theme`;
-    
+
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
         metaDescription.setAttribute('content', post.excerpt);
     }
-    
+
     // Update Open Graph tags
     const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) {
         ogTitle.setAttribute('content', post.title);
     }
-    
+
     const ogDescription = document.querySelector('meta[property="og:description"]');
     if (ogDescription) {
         ogDescription.setAttribute('content', post.excerpt);
     }
-    
+
     const ogImage = document.querySelector('meta[property="og:image"]');
     if (ogImage && post.image) {
         ogImage.setAttribute('content', post.image);
@@ -346,7 +365,7 @@ function showError(message) {
         document.getElementById('postsGrid'),
         document.getElementById('postContent')
     ];
-    
+
     grids.forEach(grid => {
         if (grid) {
             grid.innerHTML = `
